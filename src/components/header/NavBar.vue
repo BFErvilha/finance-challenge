@@ -9,7 +9,7 @@
         <router-link to="/"> Serviços </router-link>
       </vs-navbar-item>
       <vs-navbar-item index="1">
-        <router-link to="/"> Contatos </router-link>
+        <router-link to="/"> Contato </router-link>
       </vs-navbar-item>
       <vs-navbar-item class="register" index="2">
         <router-link to="/register">Cadastre-se </router-link>

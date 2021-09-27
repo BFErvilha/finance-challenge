@@ -2,18 +2,17 @@
 @import "./import/font";
 
 // Colors
-$primary-color: #2728DD;
-$secondary-color: #873DEB;
-$third-color: #3DADEB;
+$primary-color: #020202;
+$secondary-color: #873deb;
+$third-color: #2728DD;
 
 //Font-family
 $font-ibm:  'IBM Plex Sans';
 
 
-
 //scrollbar
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   border-radius: 10px;
 }
 
@@ -31,4 +30,51 @@ $font-ibm:  'IBM Plex Sans';
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $secondary-color;
+}
+
+.fadeinEffect{
+  animation: fadein 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+.fd-animation-0-8{
+  animation-duration: 0.8s;
+}
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
 }

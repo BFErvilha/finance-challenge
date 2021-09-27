@@ -1,17 +1,26 @@
 <template>
   <div>
     <Banner/>
-    <QualityBenefits />
+    <Quality />
+    <Benefits />
+    <BgImgSection />
+    <AccountSuport />
   </div>
 </template>
 
 <script>
 import Banner from '../components/home/Banner'
-import QualityBenefits from '../components/home/QualityBenefits'
+import Quality from '../components/home/Quality'
+import Benefits from '../components/home/Benefits'
+import BgImgSection from '../components/home/BgImgSection'
+import AccountSuport from '../components/home/AccountSuport'
 export default {
   name: 'Home',
   components: {
-    QualityBenefits,
+    AccountSuport,
+    BgImgSection,
+    Benefits,
+    Quality,
     Banner
   }
 }

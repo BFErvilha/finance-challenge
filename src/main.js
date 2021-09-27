@@ -11,6 +11,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
 import '@fortawesome/fontawesome-free/css/brands.min.css'
 import '@fortawesome/fontawesome-free/css/solid.min.css'
+import 'animate.css/animate.min.css'
 
 Vue.config.productionTip = false
 Vue.use(Vuesax)

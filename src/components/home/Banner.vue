@@ -31,13 +31,27 @@ export default {
   width: 100%;
   height: 690px;
   background-image: url('../../assets/img/banner-bg.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 25vh;
 
-.btn-register{
-  background-color: $secondary-color;
-  border-color: $secondary-color;
-}
+  .btn-register{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  @media (max-width: 900px){
+    padding-right: 10px;
+    padding-left: 10px;
+    background-position-x: center;
+
+    .display-3{
+      color: $primary-color;
+    }
+    p{
+      color: $secondary-color;
+    }
+  }
 }
 </style>
