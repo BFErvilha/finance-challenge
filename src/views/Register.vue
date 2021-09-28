@@ -1,15 +1,49 @@
 <template>
-  <b-container fluid>
-    <h1 style="padding-top: 100px;color: red">Register</h1>
+  <b-container class="pt-5">
+    <form-wizard @on-complete="onComplete"
+                 color="#873deb"
+                 title="Realizando seu cadastro"
+                 subtitle="Vamos realizar o passo a passo!"
+                 next-button-text="Próximo"
+                 back-button-text="Voltar"
+                 finish-button-text="Finalizar"
+                 class="ajust-container"
+    >
+      <tab-content title="Dados Pesoais"
+                   icon="fas fa-user-tie">
+        <UserInfo />
+      </tab-content>
+      <tab-content title="Dados da Empresa"
+                   icon="fas fa-building">
+        <CompanyInfo />
+      </tab-content>
+      <tab-content title="Finalizado"
+                   icon="fas fa-check">
+        <EndForm />
+      </tab-content>
+    </form-wizard>
   </b-container>
 </template>
 
 <script>
+import UserInfo from '../components/register/UserInfo'
+import CompanyInfo from '../components/register/CompanyInfo'
+import EndForm from '../components/register/EndForm'
 export default {
-  name: 'Register'
+  name: 'Register',
+  components: { EndForm, CompanyInfo, UserInfo }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../assets/scss/style";
+
+.ajust-container{
+  margin-bottom: 130px;
+
+  @media(max-width: 600px){
+    margin-bottom: 500px
+  }
+}
 
 </style>

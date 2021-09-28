@@ -1,7 +1,7 @@
 <template>
   <span>
     <b-container class="footer-bg" fluid>
-      <b-row>
+      <b-row style="width: 100%;">
         <b-col class="siteMap" md="4" xs="12">
           <h2>Mapa do Site</h2>
           <ul>

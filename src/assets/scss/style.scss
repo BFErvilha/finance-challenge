@@ -78,3 +78,43 @@ $font-ibm:  'IBM Plex Sans';
     opacity: 1;
   }
 }
+
+.vue-form-wizard.md .wizard-icon-circle {
+  width: 60px !important;
+  height: 60px !important;
+  margin-bottom: 10px !important;
+}
+
+.vue-form-wizard .wizard-nav-pills>li>a {
+  top: 8px!important;
+}
+
+.vue-form-wizard{
+  margin: 25px auto;
+  height: 500px;
+
+  .wizard-title{
+    font-size: 40px;
+    font-family: $font-ibm!important;
+    font-weight: 900;
+  }
+
+  .category{
+    font-size: 32px;
+    font-family: $font-ibm!important;
+    color: $third-color!important;
+  }
+}
+
+.vue-form-wizard .wizard-tab-content {
+  min-height: 200px;
+}
+
+.register-container{
+  @media (max-width: 600px) {
+    overflow-y: auto;
+    height: 600px;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+  }
+}
