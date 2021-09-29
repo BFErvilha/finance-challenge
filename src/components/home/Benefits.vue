@@ -20,7 +20,7 @@
         </b-card>
       </b-col>
       <b-col class="btn-simulation" cols="12">
-        <vs-button color="#2728DD" class="simulation" type="filled">
+        <vs-button color="#2728DD" class="simulation" type="filled" to="/simulation">
           <i class="fas fa-user-tie" style="margin-right: 10px"></i> Fazer simulação
         </vs-button>
       </b-col>
@@ -89,16 +89,16 @@ export default {
   $border: 5px;
   color: #FFF;
   background: #000;
-  background-clip: padding-box; /* !importanté */
-  border: solid $border transparent; /* !importanté */
+  background-clip: padding-box;
+  border: solid $border transparent;
 
   &:before {
     content: '';
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -1;
-    margin: -$border; /* !importanté */
-    border-radius: inherit; /* !importanté */
+    margin: -$border;
+    border-radius: inherit;
     background: linear-gradient(to right, $primary-color, $secondary-color);
   }
 }

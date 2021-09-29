@@ -13,7 +13,7 @@
         Cadastre-se e venha fazer uma simulação gratuíta com a gente
       </p>
 
-      <b-button class="btn-register" variant="success" href="#">Cadastrar</b-button>
+      <vs-button color="#873deb" class="simulation mt-5" type="filled" to="/simulation">Fazer simulação</vs-button>
     </b-jumbotron>
   </b-container>
 </template>

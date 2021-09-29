@@ -23,7 +23,7 @@
             </vs-card>
           </b-col>
           <b-col class="btn-simulation" sm="12" md="3">
-            <vs-button color="#2728DD" class="simulation" type="filled">Fazer simulação</vs-button>
+            <vs-button color="#2728DD" class="simulation" type="filled" to="/simulation">Fazer simulação</vs-button>
           </b-col>
         </b-row>
       </b-col>

@@ -2,7 +2,7 @@
     <vs-navbar v-model="activeItem" class="nabarx">
       <div slot="title">
         <vs-navbar-title class="logo-site">
-          <i class="fa fa-building"></i> BusiFin
+          <router-link to="/"> <i class="fa fa-building"></i> BusiFin </router-link>
         </vs-navbar-title>
       </div>
       <vs-navbar-item index="0">
@@ -35,6 +35,11 @@ export default {
   font-size: 30px!important;
   font-weight: 900;
   padding-top: 10px!important;
+
+  a{
+    text-decoration: none;
+    color: white!important;
+  }
 }
 
 .vs-navbar--btn-responsive{

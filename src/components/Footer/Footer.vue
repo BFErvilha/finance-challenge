@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <footer>
     <b-container class="footer-bg" fluid>
       <b-row style="width: 100%;">
         <b-col class="siteMap" md="4" xs="12">
@@ -36,7 +36,7 @@
       </b-row>
     </b-container>
     <UnderFooter />
-  </span>
+  </footer>
 </template>
 
 <script>

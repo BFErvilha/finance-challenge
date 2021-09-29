@@ -23,6 +23,7 @@ export default {
 .header-container{
   position: absolute;
   background: $primary-color;
+  top: 0;
 
   header{
     height: 65px;

@@ -1,5 +1,5 @@
 <template>
-  <b-container class="pt-5">
+  <b-container class="pt-5 fadeinEffect">
     <form-wizard @on-complete="onComplete"
                  color="#873deb"
                  title="Realizando seu cadastro"

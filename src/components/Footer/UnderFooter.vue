@@ -22,5 +22,12 @@ export default {
     padding-top: 26px;
     font-size: 20px;
   }
+  @media (max-width: 600px){
+    h3{
+      color: white;
+      padding-top: 26px;
+      font-size: 16px;
+    }
+  }
 }
 </style>

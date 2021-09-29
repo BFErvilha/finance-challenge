@@ -27,7 +27,7 @@
             </b-row>
           </b-form-group>
 
-          <vs-button color="#2728DD" class="btn-form mt-3" type="filled">Cadastro</vs-button>
+          <vs-button color="#2728DD" class="btn-form mt-3" type="filled" to="/register">Cadastro</vs-button>
         </b-form>
       </b-col>
       <b-col class="img-suport" sm="12" md="6">
