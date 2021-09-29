@@ -4,7 +4,7 @@
       <b-col sm="12" md="6">
         <b-row>
           <b-col class="mt-2" sm="12" md="12">
-            <vs-input color="#873deb"  type="text" label-placeholder="Nome Completo" v-model="company.name"/>
+            <vs-input color="#873deb"  type="text" label-placeholder="Nome da Empresa" v-model="company.name"/>
           </b-col>
           <b-col class="mt-2" sm="12" md="6">
             <vs-input color="#873deb" type="text" label-placeholder="Telefone" v-model="company.phone"/>
@@ -56,27 +56,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'CompanyInfo',
-  data () {
-    return {
-      company: {
-        name: '',
-        userResponsible: '',
-        email: '',
-        phone: '',
-        cnpj: '',
-        lastMonth: '',
-        website: '',
-        zipcode: '',
-        street: '',
-        number: '',
-        complement: '',
-        district: '',
-        city: '',
-        state: ''
-      }
-    }
+  computed: {
+    ...mapState({
+      company: state => state.company.companyInfo
+    })
   }
 }
 </script>

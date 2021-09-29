@@ -29,9 +29,22 @@
 import UserInfo from '../components/register/UserInfo'
 import CompanyInfo from '../components/register/CompanyInfo'
 import EndForm from '../components/register/EndForm'
+import { mapState } from 'vuex'
+
 export default {
   name: 'Register',
-  components: { EndForm, CompanyInfo, UserInfo }
+  components: { EndForm, CompanyInfo, UserInfo },
+  computed: {
+    ...mapState({
+      company: state => state.company
+    })
+  },
+  methods: {
+    onComplete: function () {
+      // this.$router.push('simulation')
+      console.log(this.company)
+    }
+  }
 }
 </script>
 

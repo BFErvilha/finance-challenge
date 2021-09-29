@@ -50,25 +50,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'userInfo',
-  data () {
-    return {
-      user: {
-        name: '',
-        email: '',
-        phone: '',
-        cpf: '',
-        rg: '',
-        zipcode: '',
-        street: '',
-        number: '',
-        complement: '',
-        district: '',
-        city: '',
-        state: ''
-      }
-    }
+  computed: {
+    ...mapState({
+      user: state => state.company.user
+    })
   }
 }
 </script>

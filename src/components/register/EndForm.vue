@@ -8,7 +8,7 @@
         <img :src="img">
       </b-col>
       <b-col class="endText-title-2" cols="12">
-        <h4>Após finalizar o cadastro você receberá um e-mail de confirmação</h4>
+        <h4>Após finalizar o cadastro você poderá efetuar a simulação</h4>
       </b-col>
     </b-row>
   </b-container>
