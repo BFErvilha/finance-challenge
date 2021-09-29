@@ -79,6 +79,26 @@ $font-ibm:  'IBM Plex Sans';
   }
 }
 
+.banner{
+  .display-3{
+    font-size: 70px;
+    font-family: $font-ibm;
+    font-weight: bolder;
+
+    @media (max-width: 600px) {
+      font-size: 40px;
+    }
+  }
+
+  p{
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.44);
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+  }
+}
+
 .vue-form-wizard.md .wizard-icon-circle {
   width: 60px !important;
   height: 60px !important;
