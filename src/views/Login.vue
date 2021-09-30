@@ -94,6 +94,7 @@ export default {
   min-height: 600px;
   margin: 10px auto -20px;
   padding-top: 13%!important;
+  text-align: center;
 
   @media (max-width: 600px) {
     margin: 35px auto -30px;

@@ -16,6 +16,7 @@ export default {
 .underFooter{
   background-color: $secondary-color;
   height: 80px;
+  text-align: center;
 
   h3{
     color: white;

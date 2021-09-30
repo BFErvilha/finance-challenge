@@ -191,6 +191,7 @@ export default {
 .simulation {
   position: relative;
   bottom: -5px;
+  text-align: center;
 }
 
 .gradient-box {

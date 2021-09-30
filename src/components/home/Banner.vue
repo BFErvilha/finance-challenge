@@ -35,6 +35,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 25vh;
+  text-align: center;
 
   .btn-register{
     background-color: $secondary-color;

@@ -105,6 +105,7 @@ export default {
 
 .btn-simulation {
   margin: 60px auto;
+  text-align: center;
 
   button{
     width: 300px;

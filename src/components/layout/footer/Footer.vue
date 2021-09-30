@@ -66,6 +66,7 @@ export default {
       color: white;
       font-family: $font-ibm;
       text-transform: uppercase;
+      text-align: center;
     }
 
     ul{
@@ -104,6 +105,7 @@ export default {
       color: white;
       font-family: $font-ibm;
       text-transform: uppercase;
+      text-align: center;
       }
 
     ul{
@@ -144,6 +146,7 @@ export default {
       color: white;
       font-family: $font-ibm;
       text-transform: uppercase;
+      text-align: center;
     }
 
     p{

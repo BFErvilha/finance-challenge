@@ -65,6 +65,7 @@ export default {
   .formSection{
     background-color: #F2F2F2;
     height: 400px;
+    text-align: center;
 
     h2{
       text-transform: uppercase;
@@ -93,6 +94,8 @@ export default {
   .img-suport{
     margin-top: 1rem;
     padding: 3rem;
+    text-align: center;
+
     @media (max-width: 600px) {
       width: 250px;
       padding: 3rem 0;

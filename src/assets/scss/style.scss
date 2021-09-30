@@ -84,6 +84,7 @@ $font-ibm:  'IBM Plex Sans';
     font-size: 70px;
     font-family: $font-ibm;
     font-weight: bolder;
+    text-align: center;
 
     @media (max-width: 600px) {
       font-size: 40px;

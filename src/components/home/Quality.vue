@@ -72,6 +72,7 @@ export default {
 
   .btn-simulation{
     padding-top: 60px;
+    text-align: center;
 
     @media (max-width: 600px) {
       padding: 30px 0;
