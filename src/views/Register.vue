@@ -29,7 +29,7 @@
 import UserInfo from '../components/register/UserInfo'
 import CompanyInfo from '../components/register/CompanyInfo'
 import EndForm from '../components/register/EndForm'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'Register',
@@ -40,9 +40,19 @@ export default {
     })
   },
   methods: {
+    ...mapActions(['register']),
+
     onComplete: function () {
-      // this.$router.push('simulation')
-      console.log(this.company)
+      this.register(this.company)
+      this.$vs.loading({
+        color: '#873deb',
+        type: 'radius',
+        background: 'rgba(2,2,2,0.53)'
+      })
+      setTimeout(() => {
+        this.$vs.loading.close()
+        this.$router.push('login')
+      }, 3000)
     }
   }
 }

@@ -3,7 +3,7 @@
     <b-row>
       <b-col sm="12" md="12" class="formSection p-5">
         <h2>Login</h2>
-        <b-form @submit="onSubmit" class="mt-3" v-if="show">
+        <b-form class="mt-3" v-if="show">
           <b-form-group>
             <b-row>
               <b-col cols="12">
@@ -27,7 +27,7 @@
             </b-row>
           </b-form-group>
 
-          <vs-button color="#2728DD" class="btn-form mt-3" type="filled" to="/simulation">Entrar</vs-button>
+          <vs-button color="#2728DD" class="btn-form mt-3" type="filled" @click="verifyLogin">Entrar</vs-button>
         </b-form>
       </b-col>
     </b-row>
@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'Login',
   data () {
@@ -44,6 +46,42 @@ export default {
         password: ''
       },
       show: true
+    }
+  },
+  computed: {
+    ...mapGetters(['user'])
+  },
+  methods: {
+    verifyLogin () {
+      if (this.form.email !== '' && this.form.email === this.user.email) {
+        if (this.form.password !== '' && this.form.password === this.user.password) {
+          this.$vs.loading({
+            color: '#873deb',
+            type: 'radius',
+            background: 'rgba(2,2,2,0.53)'
+          })
+          setTimeout(() => {
+            this.$vs.loading.close()
+            this.$router.push('simulation')
+          }, 3000)
+        } else {
+          this.$vs.notify({
+            text: 'Senha incorreta',
+            color: 'danger',
+            position: 'bottom-center',
+            icon: 'error',
+            time: 4000
+          })
+        }
+      } else {
+        this.$vs.notify({
+          text: 'E-mail não encontrado',
+          color: 'danger',
+          position: 'bottom-center',
+          icon: 'error',
+          time: 4000
+        })
+      }
     }
   }
 }

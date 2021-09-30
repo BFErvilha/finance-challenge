@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../assets/scss/style";
+@import "../../../assets/scss/style";
 
 .logo-site{
   font-family: $font-ibm;

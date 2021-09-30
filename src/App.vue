@@ -6,8 +6,8 @@
   </div>
 </template>
 <script>
-import Header from './components/header/Header'
-import Footer from './components/Footer/Footer'
+import Header from './components/layout/header/Header'
+import Footer from './components/layout/footer/Footer'
 
 export default {
   name: 'App',

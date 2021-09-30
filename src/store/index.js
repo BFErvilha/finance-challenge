@@ -10,9 +10,21 @@ export default new Vuex.Store({
       user: {}
     }
   },
-  mutations: {
+  getters: {
+    user (state) {
+      return state.company.user
+    }
   },
   actions: {
+    register ({ commit }, company) {
+      commit('SET_COMPANY', company)
+      console.log(company)
+    }
+  },
+  mutations: {
+    SET_COMPANY (state, company) {
+      state.company = company
+    }
   },
   modules: {
   }

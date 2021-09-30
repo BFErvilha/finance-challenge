@@ -18,6 +18,9 @@
           <b-col class="mt-2" sm="12" md="6">
             <vs-input color="#873deb" type="text" label-placeholder="RG" v-model="user.rg"/>
           </b-col>
+          <b-col class="mt-2" sm="12" md="6">
+            <vs-input color="#873deb" type="password" label-placeholder="Senha" v-model="user.password"/>
+          </b-col>
         </b-row>
       </b-col>
       <b-col sm="12" md="6">

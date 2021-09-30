@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/scss/style";
+@import "../../../assets/scss/style";
 
 .underFooter{
   background-color: $secondary-color;
