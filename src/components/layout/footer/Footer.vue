@@ -125,6 +125,7 @@ export default {
         border-radius: .375rem;
         border: 2px solid transparent;
         cursor: pointer;
+        text-align: center;
         &:hover{
           background-color: $primary-color;
           color: $secondary-color;
