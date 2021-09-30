@@ -60,6 +60,7 @@ export default {
 
 .section-title{
   margin-bottom: 1rem;
+  text-align: center;
   h2{
     text-transform: uppercase;
     font-family: $font-ibm;
