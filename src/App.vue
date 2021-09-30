@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <VueGithubCorners :repoUrl="repoUrl" :catColor="catColor" :bgColor="bgColor" style="z-index: 1"></VueGithubCorners>
     <Header />
     <router-view/>
     <Footer />
@@ -11,28 +12,18 @@ import Footer from './components/layout/footer/Footer'
 
 export default {
   name: 'App',
-  components: { Footer, Header }
+  components: { Footer, Header },
+  data () {
+    return {
+      repoUrl: 'https://github.com/BFErvilha/finance-challenge',
+      catColor: '#020202',
+      bgColor: '#873deb'
+    }
+  }
 }
 </script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.github-corners-svg{
+  z-index: 1;
 }
 </style>

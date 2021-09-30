@@ -5,7 +5,7 @@ import store from './store'
 import Vuesax from 'vuesax'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import VueFormWizard from 'vue-form-wizard'
-import VueTheMask from 'vue-the-mask'
+import { VueGithubCorners } from 'vue2-github-corners'
 
 import 'vuesax/dist/vuesax.css'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -21,7 +21,8 @@ Vue.use(Vuesax)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueFormWizard)
-Vue.use(VueTheMask)
+
+Vue.component('VueGithubCorners', VueGithubCorners)
 
 new Vue({
   router,
