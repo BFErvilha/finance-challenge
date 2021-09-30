@@ -10,7 +10,7 @@ Utilizado:
 
 # Demo
 
-[Demo](https://finance-challenge-enlap214l-bfervilha.vercel.app/).
+[Demo](https://finance-challenge.vercel.app/).
 
 
 ## Project setup
